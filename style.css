@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@800&family=Lora:ital@1&family=Oswald:wght@200&display=swap');
+body{
+    background-color: blanchedalmond;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'Lora', serif;
+}
+
+nav ul{
+    display: flex;
+    /* horizontal */
+    align-items: center;
+    list-style-type: none;
+    /* no bullets */
+    height: 40px;
+    background:black;
+    color: red;
+}
+
+nav ul li{
+    padding: 0 20px;
+}
+
+.brand img{
+    padding: 0 6px;
+    width: 35px;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.2rem;   
+    color: aliceblue; 
+}
+
+.container{
+    min-height: 50vh;
+    background-color: black; 
+    color: aliceblue;
+    font-family: 'Lora', serif;
+    display: flex;
+    width: 70%;
+    margin:23px auto;
+    border-radius: 14px;
+    padding: 32px;
+    background-image: url(bg1.jpg);
+    background-size: 100% 100%;
+}
+
+.bottom{
+    background-color: black;
+    position: sticky;
+    height: 80px;
+    /* 120 */
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    flex-direction: column;
+}
+
+.icons{
+    /* margin: 14px 0; */
+    margin-top: 14px;
+    color:aliceblue;
+}
+
+.icons i{
+    cursor: pointer;
+}
+
+#myProgressBar{
+    text-align: center;
+    width: 80vw;
+    cursor: pointer;
+}
+
+.songItem{
+    height: 40px;
+    display: flex;
+    background-color: white;
+    color: red;
+    /* width: 100%; */
+    margin: 12px 0px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 35px;
+}
+
+.songItemContainer{
+    margin-top: 40px;
+}
+
+.songItem img{
+    width: 45px;
+    margin: 0 15px;
+    border-radius: 34px;
+}
+
+.timestamp{
+    margin: 0 23px;   
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    font-family: 'Lora', serif;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+@media only screen and (max-width: 1100px){
+    body {
+        background-color: red;
+    }
+
+}
